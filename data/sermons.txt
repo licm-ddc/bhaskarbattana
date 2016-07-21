@@ -1,0 +1,88 @@
+{
+  "data": [
+    {
+      "id": "17072016",
+      "date": "17-07-2016",
+      "title": "Crown of Righteousness",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_17072016.MP3",
+          "video_link" : "./video/video_17072016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "03072016",
+      "date": "03-07-2016",
+      "title": "Seek the Kingdom of GOD and his Righteousness",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "false",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_03072016.MP3",
+          "video_link" : null,
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "26062016",
+      "date": "26-06-2016",
+      "title": "Let the KING answer you when you Call",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_26062016.MP3",
+          "video_link" : "./video/video_26062016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "19062016",
+      "date": "19-06-2016",
+      "title": "The Battle Belongs to the LORD",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "false",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_19062016.MP3",
+          "video_link" : null,
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "12062016",
+      "date": "12-06-2016",
+      "title": "Look at GOD everything will be change for BETTER",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_12062016.MP3",
+          "video_link" : "./video/video_12062016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "05062016",
+      "date": "05-06-2016",
+      "title": "His Mercy is Boundless",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "false",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_05062016.MP3",
+          "video_link" : null,
+          "pdf_link" : null
+      }
+    }
+  ]
+}

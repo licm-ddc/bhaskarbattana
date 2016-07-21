@@ -1,0 +1,300 @@
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 700px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 700px;
+  background: #777;
+}
+
+.carousel-inner > .item > img {
+  top: 90px;
+  left: 0;
+  min-width: 100%;
+  height: 700px;
+  position: absolute;
+}
+
+
+/* Styles for logo
+-------------------------------*/
+.logo-container .logo {
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #333333;
+    width: 120px;
+    height: 120px;
+    float: left;
+}
+
+.logo-container .brand {
+  font-size: 25px;
+  color: #FFFFFF;
+  line-height: 22px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 40px;
+  height: 40px;
+  text-align: left;
+}
+
+.navbar .navbar-menu-position {
+  margin-top: 32px;
+  color: #FFFFFF;
+}
+
+.navbar-fixed-top {
+    top: 5px;
+}
+
+.header-sticky {
+    top: 0px;
+    position: fixed;
+    line-height: 48px;
+    height: 88px;
+    width: 100%;
+    background: #eb7429;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+#menu-header:hover {
+    top: 0px;
+    position: fixed;
+    line-height: 48px;
+    height: 88px;
+    width: 100%;
+    background: #eb7429;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+div > ul > li > a {
+    color: white;
+}
+
+div > ul > li > a:hover {
+  border-bottom: 2px solid #FFFFFF;
+  text-decoration: none;
+  background: transparent !important;
+}
+
+
+.caret-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-bottom: 4px solid;
+
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+.founder {
+    overflow: hidden;
+    border: 1px solid #333333;
+    width: 340px;
+    float: left;
+    margin-left: 50px;
+}
+
+.spacer {
+    margin:2px;
+    padding:0;
+}
+
+
+.modal-header {
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.modal-content {
+    width: 510px;
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+
+.modal-body {
+    position: relative;
+    padding-top: 8px;
+    padding-left: 12px;
+
+/*#menu-header a {
+  color: white;
+}
+
+#menu-header a:hover {
+  background: white;
+  color: black;
+}*/
+
+
+
+
+/* -------- Photo Gallery styles - Start ------------ */
+.photo-gallery > ul {
+    margin-bottom: 0;
+}
+.photo-gallery > ul > li {
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    width: 200px;
+}
+.photo-gallery > ul > li a {
+    border: 3px solid #FFF;
+    border-radius: 3px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.photo-gallery > ul > li a > img {
+    -webkit-transition: -webkit-transform 0.15s ease 0s;
+    -moz-transition: -moz-transform 0.15s ease 0s;
+    -o-transition: -o-transform 0.15s ease 0s;
+    transition: transform 0.15s ease 0s;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    height: 100%;
+    width: 100%;
+}
+.photo-gallery > ul > li a:hover > img {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+.photo-gallery > ul > li a:hover .photo-gallery-poster > img {
+    opacity: 1;
+}
+.photo-gallery > ul > li a .photo-gallery-poster {
+    background-color: rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: background-color 0.15s ease 0s;
+    -o-transition: background-color 0.15s ease 0s;
+    transition: background-color 0.15s ease 0s;
+}
+.photo-gallery > ul > li a .photo-gallery-poster > img {
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -o-transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+}
+.photo-gallery > ul > li a:hover .photo-gallery-poster {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.photo-gallery .justified-gallery > a > img {
+    -webkit-transition: -webkit-transform 0.15s ease 0s;
+    -moz-transition: -moz-transform 0.15s ease 0s;
+    -o-transition: -o-transform 0.15s ease 0s;
+    transition: transform 0.15s ease 0s;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    height: 100%;
+    width: 100%;
+}
+.photo-gallery .justified-gallery > a:hover > img {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+.photo-gallery .justified-gallery > a:hover .photo-gallery-poster > img {
+    opacity: 1;
+}
+.photo-gallery .justified-gallery > a .photo-gallery-poster {
+    background-color: rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: background-color 0.15s ease 0s;
+    -o-transition: background-color 0.15s ease 0s;
+    transition: background-color 0.15s ease 0s;
+}
+.photo-gallery .justified-gallery > a .photo-gallery-poster > img {
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: opacity 0.3s ease 0s;
+    -o-transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+}
+.photo-gallery .justified-gallery > a:hover .photo-gallery-poster {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.photo-gallery .video .photo-gallery-poster img {
+    height: 48px;
+    margin-left: -24px;
+    margin-top: -24px;
+    opacity: 0.8;
+    width: 48px;
+}
+.photo-gallery.dark > ul > li a {
+    border: 3px solid #04070a;
+}
+
+/*.image-feature {
+    margin-bottom: 30px;
+    color: #333;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}*/
+.gallery-caption {
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 20px;
+}
+
+.gallery-listitem {
+    list-style-type: none;
+}
+.gallery-title {
+    margin-left: 40px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* -------- Photo Gallery styles - End   ------------ */
