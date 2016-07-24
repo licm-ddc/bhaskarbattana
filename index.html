@@ -104,7 +104,7 @@ Author: Srikanth Gaddam
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
-		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
@@ -137,6 +137,7 @@ Author: Srikanth Gaddam
             </div>
           </div>
         </div>
+<!--
 		  <div class="item">
 			  <img class="fourth-slide" src="./images/church_carousel_4.jpg" alt="Fourth slide">
 			  <div class="container">
@@ -147,6 +148,7 @@ Author: Srikanth Gaddam
 				  </div>
 			  </div>
 		  </div>
+-->
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -436,6 +438,7 @@ Author: Srikanth Gaddam
 					</div>
 			</div>
 			<!-- /.row -->
+<!--
 			<hr>
 			<div>
 					<p style="font-size:20px"> Youth Meet </p>
@@ -444,12 +447,13 @@ Author: Srikanth Gaddam
 					<p> Venue : At Church </p>
 					<p> Description: Youth Meet </p>
 			</div>
+-->
 			<hr>
 			<div>
 					<p style="font-size:20px"> Family Meet </p>
 					<p> Monday, August 15, 2016 </p>
 					<p> Time : Will Update Soon </p>
-					<p> Venue : At Church </p>
+					<p> Venue : At Our Church </p>
 					<p> Description: Family Meet </p>
 			</div>
 		</div>
@@ -466,7 +470,7 @@ Author: Srikanth Gaddam
 		        <h5 class="modal-title">Watch Live</h4>
 		      </div>
 		      <div class="modal-body">
-		        <iframe src="http://www.ustream.tv/embed/20768967?html5ui" style="border: 0 none transparent;"  webkitallowfullscreen allowfullscreen frameborder="no" width="480" height="270"></iframe><a href="http://www.ustream.tv/" title="Online streaming provided by Ustream" style="padding: 2px 0px 4px; width: 400px; background: #ffffff; display: block; color: #000000; font-weight: normal; font-size: 10px; text-decoration: underline; text-align: left;" target="_blank"></a>
+		        <iframe id="embedLive" src="http://www.ustream.tv/embed/20768967?html5ui" style="border: 0 none transparent;"  webkitallowfullscreen allowfullscreen frameborder="no" width="480" height="270"></iframe><a href="http://www.ustream.tv/" title="Online streaming provided by Ustream" style="padding: 2px 0px 4px; width: 400px; background: #ffffff; display: block; color: #000000; font-weight: normal; font-size: 10px; text-decoration: underline; text-align: left;" target="_blank"></a>
 		      </div>
 		      <!-- <div class="modal-footer">
 		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -487,7 +491,6 @@ Author: Srikanth Gaddam
 		        <h5 class="modal-title">Watch Video</h4>
 		      </div>
 		      <div class="modal-body" id="video-content">
-
 		      </div>
 		      <!-- <div class="modal-footer">
 		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -547,6 +550,8 @@ Author: Srikanth Gaddam
 	<script src="./js/lg-pager.min.js"></script>
 	<script src="./js/jquery.mousewheel.min.js"></script>
 	<script src="./js/jquery.dataTables.min.js"></script>
+	<script src="./js/date-uk.js"></script>
+	<script src="./js/ustream-embedapi.min.js"></script>
 
 	<script src="./js/menu-header.js"></script>
 	<script>
@@ -558,11 +563,15 @@ Author: Srikanth Gaddam
 			});
 
 	    $('#sermons-table').dataTable( {
-	        "ajax": "./data/sermons.txt",
+			"order": [[ 0, "desc" ]],
+			columnDefs: [
+				{ type: 'date-uk', targets: 0 }
+			],
+			"ajax": "./data/sermons.txt",
 				  "columns": [
 				    { data: "date" },
 				    { data: "title" },
-						{ data: "speaker" },
+					{ data: "speaker" },
 				    { data: "actions", render: function (data, type, row) {
 								var opacity = data.video_link ? "" : "opacity : 0.25;";
 								var title_name = data.video_link ? "video" : "no video available";
@@ -609,7 +618,33 @@ Author: Srikanth Gaddam
 
 			});
 
+			$('#liveModal').on('click', 'button.close', function(event){
+				event.preventDefault();
+				event.stopPropagation();
+				var viewer = UstreamEmbed('embedLive');
+				viewer.callMethod('pause');
+			});
+
 		});
+
+		$.extend( $.fn.dataTableExt.oSort, {
+			"date-uk-pre": function ( a ) {
+				if (a == null || a == "") {
+					return 0;
+				}
+				var ukDatea = a.split('/');
+				return (ukDatea[2] + ukDatea[1] + ukDatea[0]) * 1;
+			},
+
+			"date-uk-asc": function ( a, b ) {
+				return ((a < b) ? -1 : ((a > b) ? 1 : 0));
+			},
+
+			"date-uk-desc": function ( a, b ) {
+				return ((a < b) ? 1 : ((a > b) ? -1 : 0));
+			}
+		} );
+
 	</script>
 </body>
 </html>
