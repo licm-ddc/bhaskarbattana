@@ -1,6 +1,76 @@
 {
   "data": [
     {
+      "id": "15082016_1",
+      "date": "15/08/2016",
+      "title": "Aquila and Priscilla - The Model Family - Part 1",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_familymeet_15082016_Part1.MP3",
+          "video_link" : "./video/video_familymeet_15082016_Part1.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "15082016_2",
+      "date": "15/08/2016",
+      "title": "Aquila and Priscilla - The Model Family - Part 2",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_familymeet_15082016_Part2.MP3",
+          "video_link" : "./video/video_familymeet_15082016_Part2.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "14082016",
+      "date": "14/08/2016",
+      "title": "Walk in Spirit",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "false",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_14082016.MP3",
+          "video_link" : null,
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "07082016",
+      "date": "07/08/2016",
+      "title": "Four SECRETS for Life & Health",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_07082016.MP3",
+          "video_link" : "./video/video_07082016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "31072016",
+      "date": "31/07/2016",
+      "title": "Walk in TRUTH",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_31072016.MP3",
+          "video_link" : "./video/video_31072016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
       "id": "24072016",
       "date": "24/07/2016",
       "title": "The Wall of Jericho",

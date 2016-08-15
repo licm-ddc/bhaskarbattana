@@ -32,9 +32,10 @@
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid #333333;
-    width: 120px;
-    height: 120px;
+    width: 127px;
+    height: 128px;
     float: left;
+    background-color: white;
 }
 
 .logo-container .brand {
