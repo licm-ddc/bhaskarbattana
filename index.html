@@ -61,16 +61,16 @@ Author: Srikanth Gaddam
 					<ul class="nav navbar-nav navbar-right navbar-menu-position">
 						<li class="active"><a href="./index.html">Home</a></li>
 						<li><a href="#about-us">About Us</a></li>
-						<li><a href="#av-sermons">Sermons</a></li>
-						<!--<li class="dropdown">
+						<!--<li><a href="#av-sermons">Sermons</a></li>-->
+						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Audio Sermons</a></li>
-								<li><a href="#">Video Sermons</a></li>
-								<li><a href="#">Testimonies</a></li>
-								<li><a href="#">Bible Study</a></li>
+								<li><a href="#av-sermons">Audio / Video Sermons</a></li>
+								<!--<li><a href="#">Video Sermons</a></li>-->
+								<li><a href="#testimonies_section">Testimonies</a></li>
+								<!--<li><a href="#">Bible Study</a></li>-->
 							</ul>
-						</li> -->
+						</li>
 						<li><a href="#photo-gallery">Photo Gallery</a></li>
 						<!--<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
@@ -104,7 +104,6 @@ Author: Srikanth Gaddam
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
-		<li data-target="#myCarousel" data-slide-to="3"></li>
 		  <li data-target="#myCarousel" data-slide-to="4"></li>
 		  <li data-target="#myCarousel" data-slide-to="5"></li>
 		  <li data-target="#myCarousel" data-slide-to="6"></li>
@@ -140,18 +139,20 @@ Author: Srikanth Gaddam
             </div>
           </div>
         </div>
+<!--
 		  <div class="item">
 			  <img class="fourth-slide" src="./images/family-meet-carousel.jpg" alt="Family Meet">
 			  <div class="container">
 				  <div class="carousel-caption">
-<!--
+&lt;!&ndash;
 					  <h1>Youth Meet @ Our Church</h1>
 					  <p>This Saturday, 23rd July 2016 - 11:00 AM to 2:00 PM.</p>
 					  <p><a class="btn btn-lg btn-primary" href="#events_section" role="button">Find Out More</a></p>
--->
+&ndash;&gt;
 				  </div>
 			  </div>
 		  </div>
+-->
 		  <div class="item">
 			  <img class="fifth-slide" src="./images/communion-service-carousel.jpg" alt="Communion Service">
 			  <div class="container">
@@ -321,7 +322,35 @@ Author: Srikanth Gaddam
 				</div>
 		</div>
 
+		<!--  -->
+		<div>
+			<div style="display:none;" id="testimony_1">
+				<video class="lg-video-object lg-html5" controls preload="none">
+					<source src="./video/testimonies/testimony_14082016.mp4" type="video/mp4">
+					Your browser does not support HTML5 video.
+				</video>
+			</div>
+		</div>
 
+		<!-- Video Testimonies -->
+		<div class="container" id="testimonies_section" style="background:rgba(0, 20, 255, 0.31); margin-top:10px">
+			<!-- Title -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>Video Testimonies</h3>
+				</div>
+			</div>
+			<!-- /.row -->
+
+			<hr>
+
+			<!-- data-src should not be provided when you use html5 videos -->
+			<ul id="testimony_videos">
+				<li data-poster="./images/thumbnails/testimony_14082016.PNG" data-sub-html="Dheenraj Testimony - 14 Aug 2016" data-html="#testimony_1" >
+					<img style="cursor: pointer; width: 200px;" src="./images/thumbnails/testimony_14082016.PNG" />
+				</li>
+			</ul>
+		</div>
 		<!-- Photo Gallery -->
     <div class="container" id="photo-gallery" style="background:rgba(0, 20, 255, 0.31); margin-top:10px">
         <!-- Title -->
@@ -483,6 +512,7 @@ Author: Srikanth Gaddam
 			</div>
 -->
 			<hr>
+<!--
 			<div>
 					<p style="font-size:20px"> Family Meet </p>
 					<p> Monday, August 15, 2016 </p>
@@ -491,6 +521,9 @@ Author: Srikanth Gaddam
 					<p> Theme : Spirit-Filled and Model Family</p>
 					<p> Description: Family Meet </p>
 			</div>
+-->
+			<div>
+				</div>
 		</div>
 
 
@@ -597,32 +630,34 @@ Author: Srikanth Gaddam
 				$('#'+id).lightGallery();
 			});
 
-	    $('#sermons-table').dataTable( {
-			"order": [[ 0, "desc" ]],
-			columnDefs: [
-				{ type: 'date-uk', targets: 0 }
-			],
-			"ajax": "./data/sermons.txt",
-				  "columns": [
-				    { data: "date" },
-				    { data: "title" },
-					{ data: "speaker" },
-				    { data: "actions", render: function (data, type, row) {
-								var opacity = data.video_link ? "" : "opacity : 0.25;";
-								var title_name = data.video_link ? "video" : "no video available";
-								var actionsDiv =
-										"<a href='#' class='audio_icon_link' alt='"+ data.audio_link +"' title='audio'>"
-									+	"<span class='glyphicon glyphicon-play-circle' style='top:3px; color:black;'></span></a>"
-									+ "<span class='spacer'></span>"
-									+ "<a href='#' class='video_icon_link' alt='"+ data.video_link +"' title='" + title_name +"'>"
-								  +	"<span disabled class='glyphicon glyphicon-film' style='top:3px; color:black; "+ opacity + "'></span></a>"
-									+ "<span class='spacer'></span>"
-									+ "<a href='"+ data.audio_link +"' title='download audio' download>"
-								  +	"<span class='glyphicon glyphicon-download' style='top:3px; color:black;'></span></a>";
-                return "<div>"+ actionsDiv +"</div>";
-            } }
-				  ]
-	    } );
+			$('#testimony_videos').lightGallery();
+
+			$('#sermons-table').dataTable( {
+				"order": [[ 0, "desc" ]],
+				columnDefs: [
+					{ type: 'date-uk', targets: 0 }
+				],
+				"ajax": "./data/sermons.txt",
+					  "columns": [
+						{ data: "date" },
+						{ data: "title" },
+						{ data: "speaker" },
+						{ data: "actions", render: function (data, type, row) {
+									var opacity = data.video_link ? "" : "opacity : 0.25;";
+									var title_name = data.video_link ? "video" : "no video available";
+									var actionsDiv =
+											"<a href='#' class='audio_icon_link' alt='"+ data.audio_link +"' title='audio'>"
+										+	"<span class='glyphicon glyphicon-play-circle' style='top:3px; color:black;'></span></a>"
+										+ "<span class='spacer'></span>"
+										+ "<a href='#' class='video_icon_link' alt='"+ data.video_link +"' title='" + title_name +"'>"
+									  +	"<span disabled class='glyphicon glyphicon-film' style='top:3px; color:black; "+ opacity + "'></span></a>"
+										+ "<span class='spacer'></span>"
+										+ "<a href='"+ data.audio_link +"' title='download audio' download>"
+									  +	"<span class='glyphicon glyphicon-download' style='top:3px; color:black;'></span></a>";
+					return "<div>"+ actionsDiv +"</div>";
+				} }
+					  ]
+			} );
 
 			$('#sermons-table').on('click', 'a.audio_icon_link', function(event) {
 				event.preventDefault();
