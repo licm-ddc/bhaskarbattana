@@ -1,6 +1,20 @@
 {
   "data": [
     {
+      "id": "28082016",
+      "date": "28/08/2016",
+      "title": "GOD's Angelic Intervention",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_28082016.MP3",
+          "video_link" : "./video/video_28082016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
       "id": "21082016",
       "date": "21/08/2016",
       "title": "Depending on GOD",
