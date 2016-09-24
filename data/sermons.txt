@@ -1,6 +1,48 @@
 {
   "data": [
     {
+      "id": "18092016",
+      "date": "18/09/2016",
+      "title": "Giving thanks to GOD in all things",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_18092016.MP3",
+          "video_link" : "./video/video_18092016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "11092016",
+      "date": "11/09/2016",
+      "title": "Believing for Miracles",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_11092016.MP3",
+          "video_link" : "./video/video_11092016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "04092016",
+      "date": "04/09/2016",
+      "title": "Determination to follow GOD",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_04092016.MP3",
+          "video_link" : "./video/video_04092016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
       "id": "28082016",
       "date": "28/08/2016",
       "title": "GOD's Angelic Intervention",
