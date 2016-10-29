@@ -1,6 +1,62 @@
 {
   "data": [
     {
+      "id": "16102016",
+      "date": "16/10/2016",
+      "title": "Qualities that please GOD",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_16102016.MP3",
+          "video_link" : "./video/video_16102016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "09102016",
+      "date": "09/10/2016",
+      "title": "GOD ordains PEACE",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_09102016.MP3",
+          "video_link" : "./video/video_09102016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "02102016",
+      "date": "02/10/2016",
+      "title": "Acceptable LIFE",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_02102016.MP3",
+          "video_link" : "./video/video_02102016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "25092016",
+      "date": "25/09/2016",
+      "title": "GOD Remembered",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_25092016.MP3",
+          "video_link" : "./video/video_25092016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
       "id": "18092016",
       "date": "18/09/2016",
       "title": "Giving thanks to GOD in all things",
