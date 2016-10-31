@@ -1,6 +1,20 @@
 {
   "data": [
     {
+      "id": "30102016",
+      "date": "30/10/2016",
+      "title": "Nothing Separates me from the LOVE of CHRIST",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_30102016.MP3",
+          "video_link" : "./video/video_30102016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
       "id": "16102016",
       "date": "16/10/2016",
       "title": "Qualities that please GOD",
