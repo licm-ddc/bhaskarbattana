@@ -1,0 +1,50 @@
+{
+  "album_data": [
+      {
+        "album_name":"Church Gallery",
+        "album_id":"church_photo_gallery",
+        "album_description":"The gallery related to Church Photos",
+        "album_thumb_image":"./images/church/thumb-1.jpg"
+      },
+      {
+        "album_name":"Preaching Gallery",
+        "album_id":"preaching_photo_gallery",
+        "album_description":"The gallery related to Preaching Photos",
+        "album_thumb_image":"./images/preaching/thumb-1.jpg"
+      },
+      {
+        "album_name":"Anointing Gallery",
+        "album_id":"anointing_photo_gallery",
+        "album_description":"The gallery related to Anointing Photos",
+        "album_thumb_image":"./images/anointing/thumb-1.jpg"
+      }
+  ],
+  "gallery_data": [
+    "church_photo_gallery": [
+      {
+        "src": "./images/church/1-800.jpg",
+        "thumb": "./images/church/thumb-1.jpg",
+        "subHtml": "Church Photo1"
+      },
+      {
+        "src": "./images/church/2-800.jpg",
+        "thumb": "./images/church/thumb-2.jpg",
+        "subHtml": "Church Photo2"
+      }
+    ],
+    "preaching_photo_gallery": [
+      {
+        "src": "./images/preaching/1-800.jpg",
+        "thumb": "./images/preaching/thumb-1.jpg",
+        "subHtml": "Preaching Photo1"
+      }
+    ],
+    "anointing_photo_gallery": [
+      {
+        "src": "./images/anointing/1-800.jpg",
+        "thumb": "./images/anointing/thumb-1.jpg",
+        "subHtml": "Preaching Photo1"
+      }
+    ]
+  ]
+}

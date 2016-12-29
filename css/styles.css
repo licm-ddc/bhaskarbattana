@@ -144,17 +144,7 @@ div > ul > li > a:hover {
     position: relative;
     padding-top: 8px;
     padding-left: 12px;
-
-/*#menu-header a {
-  color: white;
 }
-
-#menu-header a:hover {
-  background: white;
-  color: black;
-}*/
-
-
 
 
 /* -------- Photo Gallery styles - Start ------------ */
@@ -270,20 +260,6 @@ div > ul > li > a:hover {
     border: 3px solid #04070a;
 }
 
-/*.image-feature {
-    margin-bottom: 30px;
-    color: #333;
-    display: block;
-    padding: 4px;
-    margin-bottom: 20px;
-    line-height: 1.42857143;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    -webkit-transition: border .2s ease-in-out;
-    -o-transition: border .2s ease-in-out;
-    transition: border .2s ease-in-out;
-}*/
 .gallery-caption {
     font-family: "Times New Roman", Times, serif;
     margin-left: 20px;
@@ -299,3 +275,27 @@ div > ul > li > a:hover {
     font-weight: bold;
 }
 /* -------- Photo Gallery styles - End   ------------ */
+
+/* -------- Fade Alert styles - Start ------------------ */
+.pr-fade-alert {
+	padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px; 
+}
+
+.pr-fade-alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+	display: none;
+}
+
+.pr-fade-alert-failure {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+	display: none;
+}
+
+/* -------- Fade Alert styles - End ------------------ */

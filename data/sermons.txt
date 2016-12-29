@@ -1,6 +1,104 @@
 {
   "data": [
     {
+      "id": "18122016",
+      "date": "18/12/2016",
+      "title": "Keep the LORD before you",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_18122016.MP3",
+          "video_link" : "./video/video_18122016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "11122016",
+      "date": "11/12/2016",
+      "title": "Mighty GOD",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "false",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_11122016.MP3",
+          "video_link" : "./video/video_11122016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "04122016",
+      "date": "04/12/2016",
+      "title": "Pleasing GOD",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_04122016.MP3",
+          "video_link" : "./video/video_04122016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "27112016",
+      "date": "27/11/2016",
+      "title": "Hope in his WORD",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "false",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_27112016.MP3",
+          "video_link" : "./video/video_27112016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "20112016",
+      "date": "20/11/2016",
+      "title": "Choosen By GOD",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "false",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_20112016.mp3",
+          "video_link" : "./video/video_20112016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "13112016",
+      "date": "13/11/2016",
+      "title": "GOD's Mercy",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_13112016.MP3",
+          "video_link" : "./video/video_13112016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
+      "id": "06112016",
+      "date": "06/11/2016",
+      "title": "Zaccheus",
+      "speaker": "Bhaskar Battana",
+      "actions": {
+          "is_audio" : "true",
+          "is_video" : "true",
+          "is_pdf" : "false",
+          "audio_link" : "./audio/audio_06112016.MP3",
+          "video_link" : "./video/video_06112016.mp4",
+          "pdf_link" : null
+      }
+    },
+    {
       "id": "30102016",
       "date": "30/10/2016",
       "title": "Nothing Separates me from the LOVE of CHRIST",
